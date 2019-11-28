@@ -8,7 +8,7 @@ function createNode(element) {//function sem nær i element to byr til node fyri
   }
 
   const ul = document.getElementById('bands');//nær i id sem = bands
-  const url = 'http://apis.is/concerts';//nær i url fra apis
+  const url = 'https://apis.is/concerts';//nær i url fra apis
   fetch(url)//fetch nær i url json
   .then((resp) => resp.json())//ef einhvað gerirst við data þá breytir hann þvi
   .then(function(data) {//vinnur með datainu fra json
